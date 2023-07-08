@@ -15,7 +15,7 @@ const MainNav = ({ items }: MainNavProps) => {
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </a>
       {items?.length ? (
-        <nav className="flex gap-6">
+        <nav className="hidden gap-6 md:flex">
           {items?.map(
             (item, index) =>
               item.href && (
