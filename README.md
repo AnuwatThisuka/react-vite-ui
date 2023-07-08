@@ -14,14 +14,15 @@ A React + Vite template powered by shadcn/ui.
 - **ESLint** - A pluggable linting utility for JavaScript and TypeScript.
 - **PostCSS** - A tool for transforming CSS with JavaScript.
 - **Autoprefixer** - A PostCSS plugin to parse CSS and add vendor prefixes.
-- **shadcn/ui** - Beautifully designed components that you can copy and paste into your apps.
+- **React Router DOM** - A routing library for React.
+- **Shadcn/ui** - Beautifully designed components that you can copy and paste into your apps.
 
 ## ⚙️ Prerequisites
 
 Make sure you have the following installed on your development machine:
 
 - Node.js (version 16 or above)
-- pnpm (package manager)
+- yarn (package manager)
 
 ## 🚀 Getting Started
 
@@ -30,7 +31,7 @@ Follow these steps to get started with the react-vite-ui template:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/dan5py/react-vite-ui.git
+   git clone https://github.com/anuwatthisuka/react-vite-ui.git
    ```
 
 2. Navigate to the project directory:
@@ -42,21 +43,21 @@ Follow these steps to get started with the react-vite-ui template:
 3. Install the dependencies:
 
    ```bash
-   pnpm install
+   yarn install
    ```
 
 4. Start the development server:
 
    ```bash
-   pnpm dev
+   yarn dev
    ```
 
 ## 📜 Available Scripts
 
-- pnpm dev - Starts the development server.
-- pnpm build - Builds the production-ready code.
-- pnpm lint - Runs ESLint to analyze and lint the code.
-- pnpm preview - Starts the Vite development server in preview mode.
+- yarn dev - Starts the development server.
+- yarn build - Builds the production-ready code.
+- yarn lint - Runs ESLint to analyze and lint the code.
+- yarn preview - Starts the Vite development server in preview mode.
 
 ## 📂 Project Structure
 
@@ -67,12 +68,14 @@ react-vite-ui/
   ├── node_modules/      # Project dependencies
   ├── public/            # Public assets
   ├── src/               # Application source code
-  │   ├── components/    # React components
-  │   │   └── ui/        # shadc/ui components
-  │   ├── styles/        # CSS stylesheets
+  │   ├─ components/     # React components
+  │   │   └── ui/        # shadcn/ui components
+  │   ├── index.css/     # CSS stylesheets
   │   ├── lib/           # Utility functions
   │   ├── App.tsx        # Application entry point
   │   └── index.tsx      # Main rendering file
+  ├── components.json    # shadcn/ui setting components
+  ├── .editorconfig      # EditorConfig configuration
   ├── .eslintrc.json     # ESLint configuration
   ├── index.html         # HTML entry point
   ├── postcss.config.js  # PostCSS configuration

@@ -11,7 +11,7 @@ const MainNav = ({ items }: MainNavProps) => {
   return (
     <div className="flex gap-6 md:gap-10">
       <a href="/" className="flex items-center space-x-2">
-        <Icons.vercel className="h-6 w-6" />
+        <Icons.pizza className="h-6 w-6" />
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </a>
       {items?.length ? (
